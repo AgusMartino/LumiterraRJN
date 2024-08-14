@@ -219,14 +219,16 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        breedingproficiency: Number(result.attributes["breedingproficiency"][0]),
-        homeextramovespd: Number(result.attributes["homeextramovespd"][0]),
-        maxfertility: Number(result.attributes["maxfertility"][0]),
-        maxpethappiness: Number(result.attributes["maxpethappiness"][0]),
-        plantingproficiency: Number(result.attributes["plantingproficiency"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          breedingproficiency= Number(result.attributes["breedingproficiency"][0]),
+          homeextramovespd= Number(result.attributes["homeextramovespd"][0]),
+          maxfertility= Number(result.attributes["maxfertility"][0]),
+          maxpethappiness= Number(result.attributes["maxpethappiness"][0]),
+          plantingproficiency= Number(result.attributes["plantingproficiency"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -238,14 +240,16 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        breedingproficiency: Number(result.attributes["breedingproficiency"][0]),
-        hoespd: Number(result.attributes["hoespd"][0]),
-        maxfertility: Number(result.attributes["maxfertility"][0]),
-        maxpethappiness: Number(result.attributes["maxpethappiness"][0]),
-        plantingproficiency: Number(result.attributes["plantingproficiency"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          breedingproficiency= Number(result.attributes["breedingproficiency"][0]),
+          hoespd= Number(result.attributes["hoespd"][0]),
+          maxfertility= Number(result.attributes["maxfertility"][0]),
+          maxpethappiness= Number(result.attributes["maxpethappiness"][0]),
+          plantingproficiency= Number(result.attributes["plantingproficiency"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -257,15 +261,17 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        breedingproficiency: Number(result.attributes["breedingproficiency"][0]),
-        fertilitycapacity: Number(result.attributes["fertilitycapacity"][0]),
-        maxfertility: Number(result.attributes["maxfertility"][0]),
-        maxpethappiness: Number(result.attributes["maxpethappiness"][0]),
-        pethappinesscapacity: Number(result.attributes["pethappinesscapacity"][0]),
-        plantingproficiency: Number(result.attributes["plantingproficiency"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          breedingproficiency= Number(result.attributes["breedingproficiency"][0]),
+          fertilitycapacity= Number(result.attributes["fertilitycapacity"][0]),
+          maxfertility= Number(result.attributes["maxfertility"][0]),
+          maxpethappiness= Number(result.attributes["maxpethappiness"][0]),
+          pethappinesscapacity= Number(result.attributes["pethappinesscapacity"][0]),
+          plantingproficiency= Number(result.attributes["plantingproficiency"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -277,13 +283,15 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        breedingproficiency: Number(result.attributes["breedingproficiency"][0]),
-        maxfertility: Number(result.attributes["maxfertility"][0]),
-        maxpethappiness: Number(result.attributes["maxpethappiness"][0]),
-        plantingproficiency: Number(result.attributes["plantingproficiency"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          breedingproficiency= Number(result.attributes["breedingproficiency"][0]),
+          maxfertility= Number(result.attributes["maxfertility"][0]),
+          maxpethappiness= Number(result.attributes["maxpethappiness"][0]),
+          plantingproficiency= Number(result.attributes["plantingproficiency"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -295,13 +303,15 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        breedingproficiency: Number(result.attributes["breedingproficiency"][0]),
-        maxfertility: Number(result.attributes["maxfertility"][0]),
-        maxpethappiness: Number(result.attributes["maxpethappiness"][0]),
-        plantingproficiency: Number(result.attributes["plantingproficiency"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          breedingproficiency= Number(result.attributes["breedingproficiency"][0]),
+          maxfertility= Number(result.attributes["maxfertility"][0]),
+          maxpethappiness= Number(result.attributes["maxpethappiness"][0]),
+          plantingproficiency= Number(result.attributes["plantingproficiency"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -313,12 +323,14 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatatt: Number(result.attributes["combatatt"][0]),
-        fertilitycapacity: Number(result.attributes["fertilitycapacity"][0]),
-        hoeingeffect: Number(result.attributes["hoeingeffect"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          combatatt= Number(result.attributes["combatatt"][0]),
+          fertilitycapacity= Number(result.attributes["fertilitycapacity"][0]),
+          hoeingeffect= Number(result.attributes["hoeingeffect"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -330,10 +342,12 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        wateringeffect: Number(result.attributes["wateringeffect"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          wateringeffect= Number(result.attributes["wateringeffect"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );

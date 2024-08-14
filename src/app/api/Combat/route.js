@@ -250,12 +250,14 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatdef: Number(result.attributes["combatdef"][0]),
-        maxhp: Number(result.attributes["maxhp"][0]),
-        movespd: Number(result.attributes["movespd"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          combatdef= Number(result.attributes["combatdef"][0]),
+          maxhp= Number(result.attributes["maxhp"][0]),
+          movespd= Number(result.attributes["movespd"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -267,11 +269,13 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatdef: Number(result.attributes["combatdef"][0]),
-        maxhp: Number(result.attributes["maxhp"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          combatdef= Number(result.attributes["combatdef"][0]),
+          maxhp= Number(result.attributes["maxhp"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -283,12 +287,14 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatatt: Number(result.attributes["combatatt"][0]),
-        combatdef: Number(result.attributes["combatdef"][0]),
-        maxhp: Number(result.attributes["maxhp"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          combatatt= Number(result.attributes["combatatt"][0]),
+          combatdef= Number(result.attributes["combatdef"][0]),
+          maxhp= Number(result.attributes["maxhp"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -300,11 +306,13 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatdef: Number(result.attributes["combatdef"][0]),
-        maxhp: Number(result.attributes["maxhp"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          combatdef= Number(result.attributes["combatdef"][0]),
+          maxhp= Number(result.attributes["maxhp"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -316,10 +324,12 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatdef: Number(result.attributes["combatdef"][0]),
-        maxhp: Number(result.attributes["maxhp"][0]),
+        attributes:[
+          combatdef= Number(result.attributes["combatdef"][0]),
+          maxhp= Number(result.attributes["maxhp"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -331,12 +341,14 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatatt: Number(result.attributes["combatatt"][0]),
-        combatcritrate: Number(result.attributes["combatcritrate"][0]),
-        grassatt: Number(result.attributes["grassatt"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          combatatt= Number(result.attributes["combatatt"][0]),
+          combatcritrate= Number(result.attributes["combatcritrate"][0]),
+          grassatt= Number(result.attributes["grassatt"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -348,11 +360,13 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatatt: Number(result.attributes["combatatt"][0]),
-        combatcritrate: Number(result.attributes["combatcritrate"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          combatatt= Number(result.attributes["combatatt"][0]),
+          combatcritrate= Number(result.attributes["combatcritrate"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0],
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -364,11 +378,13 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatatt: Number(result.attributes["combatatt"][0]),
-        combathit: Number(result.attributes["combathit"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          combatatt= Number(result.attributes["combatatt"][0]),
+          combathit= Number(result.attributes["combathit"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );

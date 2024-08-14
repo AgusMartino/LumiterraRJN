@@ -245,12 +245,14 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        grassproficiency: Number(result.attributes["grassproficiency"][0]),
-        oreproficiency: Number(result.attributes["oreproficiency"][0]),
-        treeproficiency: Number(result.attributes["treeproficiency"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          grassproficiency= Number(result.attributes["grassproficiency"][0]),
+          oreproficiency= Number(result.attributes["oreproficiency"][0]),
+          treeproficiency= Number(result.attributes["treeproficiency"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -262,13 +264,15 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        grassproficiency: Number(result.attributes["grassproficiency"][0]),
-        oreproficiency: Number(result.attributes["oreproficiency"][0]),
-        treeproficiency: Number(result.attributes["treeproficiency"][0]),
-        orecritdmg: Number(result.attributes["orecritdmg"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          grassproficiency= Number(result.attributes["grassproficiency"][0]),
+          oreproficiency= Number(result.attributes["oreproficiency"][0]),
+          treeproficiency= Number(result.attributes["treeproficiency"][0]),
+          orecritdmg= Number(result.attributes["orecritdmg"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -280,16 +284,18 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        grassproficiency: Number(result.attributes["grassproficiency"][0]),
-        oreproficiency: Number(result.attributes["oreproficiency"][0]),
-        treeproficiency: Number(result.attributes["treeproficiency"][0]),
-        grassatt: Number(result.attributes["grassatt"][0]),
-        oreatt: Number(result.attributes["oreatt"][0]),
-        treeatt: Number(result.attributes["treeatt"][0]),
-        pickaxespd: Number(result.attributes["pickaxespd"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          grassproficiency= Number(result.attributes["grassproficiency"][0]),
+          oreproficiency= Number(result.attributes["oreproficiency"][0]),
+          treeproficiency= Number(result.attributes["treeproficiency"][0]),
+          grassatt= Number(result.attributes["grassatt"][0]),
+          oreatt= Number(result.attributes["oreatt"][0]),
+          treeatt= Number(result.attributes["treeatt"][0]),
+          pickaxespd= Number(result.attributes["pickaxespd"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -301,13 +307,15 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        grassproficiency: Number(result.attributes["grassproficiency"][0]),
-        oreproficiency: Number(result.attributes["oreproficiency"][0]),
-        treeproficiency: Number(result.attributes["treeproficiency"][0]),
-        axespd: Number(result.attributes["axespd"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          grassproficiency= Number(result.attributes["grassproficiency"][0]),
+          oreproficiency= Number(result.attributes["oreproficiency"][0]),
+          treeproficiency= Number(result.attributes["treeproficiency"][0]),
+          axespd= Number(result.attributes["axespd"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -319,13 +327,15 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        grassproficiency: Number(result.attributes["grassproficiency"][0]),
-        oreproficiency: Number(result.attributes["oreproficiency"][0]),
-        treeproficiency: Number(result.attributes["treeproficiency"][0]),
-        treedmgbonus: Number(result.attributes["treedmgbonus"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          grassproficiency= Number(result.attributes["grassproficiency"][0]),
+          oreproficiency= Number(result.attributes["oreproficiency"][0]),
+          treeproficiency= Number(result.attributes["treeproficiency"][0]),
+          treedmgbonus= Number(result.attributes["treedmgbonus"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -337,11 +347,13 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatatt: Number(result.attributes["combatatt"][0]),
-        treeatt: Number(result.attributes["treeatt"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          combatatt= Number(result.attributes["combatatt"][0]),
+          treeatt= Number(result.attributes["treeatt"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -353,11 +365,13 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatatt: Number(result.attributes["combatatt"][0]),
-        oreatt: Number(result.attributes["oreatt"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          combatatt= Number(result.attributes["combatatt"][0]),
+          oreatt= Number(result.attributes["oreatt"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
@@ -369,16 +383,16 @@ export async function GET(request) {
           (result.minPrice / 1000000000000000000) *
             dataExchangeRate.data.exchangeRate.ron.usd
         ).toFixed(2),
-        combatatt: Number(result.attributes["combatatt"][0]),
-        grassatt: Number(result.attributes["grassatt"][0]),
-        requireslevel: Number(result.attributes["requires level"][0]),
+        attributes:[
+          combatatt= Number(result.attributes["combatatt"][0]),
+          grassatt= Number(result.attributes["grassatt"][0]),
+          requireslevel= Number(result.attributes["requires level"][0]),
+          quality= result.attributes["quality"][0]
+        ],
         image: result.image,
-        quality: result.attributes["quality"][0],
         type: result.attributes["type"][0]
       })
     );
-
-
 
     return NextResponse.json(allResults);
   } catch (error) {
